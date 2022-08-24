@@ -7,13 +7,15 @@ import { loginController, loginPostController, logOutController, loginErrorContr
 import { registerController, registerPostController, registerErrorController } from "../controller/registerController.js";
 import { logginMiddleware } from "../middleware/logginMiddleware.js";
 import { infoController } from '../controller/infoController.js';
+import { randomsController } from '../controller/randomsController.js';
 
 
 const router = Router()
 
-//Rutas Test-Info
+//Rutas Test-Info-Random
 router.get('/products-test', productsTest)
 router.get('/info', infoController)
+router.get('/randoms', randomsController)
 
 //Rutas de register
 router.get('/register', registerController)

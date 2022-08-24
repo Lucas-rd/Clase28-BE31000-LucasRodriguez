@@ -26,17 +26,6 @@ const args = yargsOptions.alias({
   port: 8080
 }).argv
 
-
-// console.log({
-//   puerto: args,
-//   plataforma: process.platform,
-//   versionNode: process.version,
-//   memoriaTotalReservada: process.memoryUsage().rss,
-//   pathExec: process.execPath,
-//   processId: process.pid,
-//   capetaProyecto: process.cwd()
-// })
-
 const app = express()
 const PORT = args.port
 
